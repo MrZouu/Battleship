@@ -7,4 +7,10 @@
 #ifndef BATTLESHIP_HEADER_H
 #define BATTLESHIP_HEADER_H
 
+typedef struct bateau{
+    int quantite; //selon type
+    int symbole; // P/C/D/S
+    int taille;
+    int position;
+}t_bateau;
 #endif //BATTLESHIP_HEADER_H
