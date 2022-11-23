@@ -1,9 +1,9 @@
 //
 // Created by Mat Plat on 21/11/2022.
 //
-#include "header.h"
+#include "AnsiAffichage.h"
 //DA = angle haut gauche
-//AA = angle haut droit
+//BF = angle haut droit
 //C0 = angle bas gauche
 //D9 = angle bas droit
 //C5 = croix
@@ -14,9 +14,9 @@
 //C2 = T
 //C3 = T penché a gauche
 
-void AnsiAffichage(){
+void AnsiAffichage(){ //Grille avec caracteres ANSI
     printf("%c",0xDA);
-    printf("%c\n",0xAA);
+    printf("%c\n",0xBF);
     printf("%c",0xC0);
     printf("%c",0xD9);
 

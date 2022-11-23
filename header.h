@@ -51,6 +51,5 @@ typedef struct SousMarin{
     int position;
 }t_SousMarin;
 
-void AnsiAffichage();
 
 #endif //BATTLESHIP_HEADER_H
