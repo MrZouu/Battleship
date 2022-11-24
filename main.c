@@ -2,9 +2,13 @@
 // Created by Lorenzo on 21/11/2022.
 //
 
-#include "header.h"
+#include "Navires.h"
+#include "AnsiAffichage.h"
 
 int main()
 {
-    AnsiAffichage();
+    t_game b;
+    init(&b);
+    AnsiAffichage(b);
+    return 0;
 }
