@@ -1,19 +1,11 @@
 //
 // Created by Lorenzo on 21/11/2022.
 //
+#ifndef BATTLESHIP_NAVIRES_H
+#define BATTLESHIP_NAVIRES_H
+
 #include <stdio.h>
 #include <stdlib.h>
-
-#define LIGNES 14
-#define COLONNES 14
-
-#ifndef BATTLESHIP_HEADER_H
-#define BATTLESHIP_HEADER_H
-
-typedef struct Plateau{
-    int grille[LIGNES][COLONNES];
-    int grilleAdverse[LIGNES][COLONNES];
-}t_plateau;
 
 typedef struct bateau{
     int quantite; //selon type
@@ -51,6 +43,6 @@ typedef struct SousMarin{
     int position;
 }t_SousMarin;
 
-void AnsiAffichage();
 
-#endif //BATTLESHIP_HEADER_H
+#endif //BATTLESHIP_NAVIRES_H
+

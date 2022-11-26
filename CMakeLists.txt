@@ -4,4 +4,5 @@ project(Battleship C)
 set(CMAKE_C_STANDARD 11)
 
 add_executable(Battleship
-        main.c)
+        main.c AnsiAffichage.h AnsiAffichage.c Navires.h)
+
