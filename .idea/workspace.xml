@@ -17,9 +17,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="test">
-      <change beforePath="$PROJECT_DIR$/.idea/Battleship.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Battleship.iml" afterDir="false" />
+    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Saisie complète flotte">
+      <change afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Plateau.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Navires.c" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Navires.h" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
@@ -58,7 +60,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/lor3n/CLionProjects/TPING3U2",
+    "last_opened_file_path": "C:/Users/lor3n/Documents/GitHub/Cledeo",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.customizations",
     "structure.view.defaults.are.configured": "true"
@@ -94,7 +96,7 @@
       <workItem from="1669551636408" duration="53000" />
       <workItem from="1669551696286" duration="73000" />
       <workItem from="1669551781050" duration="367000" />
-      <workItem from="1669552161216" duration="3258000" />
+      <workItem from="1669552161216" duration="6005000" />
     </task>
     <task id="LOCAL-00001" summary="Test remplissage struct navires">
       <created>1669511278301</created>
@@ -117,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669549938278</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Saisie complète flotte">
+      <created>1669557835162</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669557835162</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Test remplissage struct navires" />
     <MESSAGE value="test" />
-    <option name="LAST_COMMIT_MESSAGE" value="test" />
+    <MESSAGE value="Saisie complète flotte" />
+    <option name="LAST_COMMIT_MESSAGE" value="Saisie complète flotte" />
   </component>
 </project>

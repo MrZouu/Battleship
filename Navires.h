@@ -11,8 +11,8 @@
 #define nbD 3
 #define nbSM 4
 
-#define MAX 15
-#define MIN 0
+#define MAX 15  //Position MAX
+#define MIN 1   //Position MIN
 
 typedef struct PorteAvion{  //7 CASES
     char symbole;
@@ -42,7 +42,7 @@ typedef struct SousMarin{   //1 CASE
     int pos_Y;
 }t_sousMarin;
 
-void miseTest();
+void initialisationFlotte();
 t_porteAv SaisirPa(t_porteAv * pA);
 t_croiseur SaisirC(t_porteAv * C);
 t_destroy SaisirD(t_porteAv * D);

@@ -3,7 +3,9 @@
 //
 #include "Navires.h"
 
-void miseTest()
+//Définir caractéristiques navire, position aléatoire, initialisation
+//Navires a poser sur lignes impaires et colonnes pas multiples de 3
+void initialisationFlotte()
 {
     t_porteAv qt1;
     t_croiseur qt2[nbC];
@@ -14,8 +16,8 @@ void miseTest()
     SaisirFlotteC(&qt2);
     SaisirFlotteD(&qt3);
     SaisirFlotteSm(&qt4);
-    afficherFlotte(qt2);
-    afficherPa(qt1);
+    //afficherFlotte(qt2);
+    //afficherPa(qt1);
 }
 
 t_porteAv SaisirPa(t_porteAv * pA)
