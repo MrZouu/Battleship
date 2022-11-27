@@ -2,7 +2,7 @@
 // Created by Lorenzo on 27/11/2022.
 //
 #include "Navires.h"
-/*
+
 void miseTest()
 {
     t_porteAv qt1;
@@ -71,4 +71,3 @@ void afficherTableM(t_croiseur * qt2)
     }
 }
 
-*/

@@ -44,7 +44,6 @@ t_porteAv SaisirPa(t_porteAv * pA);
 t_croiseur SaisirC(t_porteAv * C);
 t_destroy SaisirD(t_porteAv * D);
 t_sousMarin SaisirSm(t_porteAv * Sm);
-
 void afficherM(t_croiseur C);
 void afficherTableM(t_croiseur * qt2);
 
