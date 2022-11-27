@@ -6,43 +6,47 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+//Nombre de navires
+#define nbC 2
+#define nbD 3
+#define nbSM 4
 
-typedef struct bateau{
-    int quantite; //selon type
-    int symbole; // P/C/D/S
+typedef struct PorteAvion{  //7 CASES
+    char symbole;
     int taille;
-    int position;
-}t_bateau;
+    int pos_X;
+    int pos_Y;
+}t_porteAv;
 
-
-typedef struct PorteAvion{
-    int symbole;        //Pas obliger vu que c'est une structure unique
-    int numero;     //Numero du bateau ??
+typedef struct Croiseur{    //5 CASES
+    char symbole;
     int taille;
-    int position;
-}t_PorteAv;
+    int pos_X;
+    int pos_Y;
+}t_croiseur;
 
-typedef struct Croiseur{
-    int symbole;        //Pas obliger vu que c'est une structure unique
-    int numero;     //Numero du bateau ??
+typedef struct Destroyeur{  //3 CASES
+    char symbole;
     int taille;
-    int position;
-}t_Croiseur;
+    int pos_X;
+    int pos_Y;
+}t_destroy;
 
-typedef struct Destroyeur{
-    int symbole;        //Pas obliger vu que c'est une structure unique
-    int numero;     //Numero du bateau ??
+typedef struct SousMarin{   //1 CASE
+    char symbole;
     int taille;
-    int position;
-}t_Destroy;
+    int pos_X;
+    int pos_Y;
+}t_sousMarin;
 
-typedef struct SousMarin{
-    int symbole;        //Pas obliger vu que c'est une structure unique
-    int numero;     //Numero du bateau ??
-    int taille;
-    int position;
-}t_SousMarin;
+void miseTest();
+t_porteAv SaisirPa(t_porteAv * pA);
+t_croiseur SaisirC(t_porteAv * C);
+t_destroy SaisirD(t_porteAv * D);
+t_sousMarin SaisirSm(t_porteAv * Sm);
 
+void afficherM(t_croiseur C);
+void afficherTableM(t_croiseur * qt2);
 
 #endif //BATTLESHIP_NAVIRES_H
 
