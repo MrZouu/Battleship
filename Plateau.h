@@ -5,4 +5,11 @@
 #ifndef BATTLESHIP_PLATEAU_H
 #define BATTLESHIP_PLATEAU_H
 
+#include "Navires.h"
+#include "AnsiAffichage.h"
+
+void affecterC(t_croiseur C);
+void affecterPa(t_porteAv pA);
+void FlotteC(t_croiseur * qt2);
+
 #endif //BATTLESHIP_PLATEAU_H

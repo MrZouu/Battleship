@@ -11,8 +11,8 @@
 #define nbD 3
 #define nbSM 4
 
-#define MAX 15  //Position MAX
-#define MIN 1   //Position MIN
+#define MAX 14  //Position MAX
+#define MIN 0   //Position MIN
 
 typedef struct PorteAvion{  //7 CASES
     char symbole;
@@ -52,9 +52,7 @@ void SaisirFlotteC(t_croiseur * qt2);
 void SaisirFlotteD(t_destroy * qt3);
 void SaisirFlotteSm(t_sousMarin * qt4);
 
-void afficherC(t_croiseur C);
-void afficherPa(t_porteAv pA);
-void afficherFlotte(t_croiseur * qt2);
+
 
 #endif //BATTLESHIP_NAVIRES_H
 

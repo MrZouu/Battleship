@@ -8,5 +8,7 @@ add_executable(Battleship
         AnsiAffichage.h
         AnsiAffichage.c
         Navires.h
-        Navires.c Plateau.c Plateau.h)
+        Navires.c
+        Plateau.c
+        Plateau.h)
 

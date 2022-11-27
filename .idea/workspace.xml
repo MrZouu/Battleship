@@ -17,15 +17,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Saisie complète flotte">
-      <change afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Plateau.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Navires.c" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Navires.h" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-    </list>
+    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Affectation flotte test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +52,7 @@
     "WebServerToolWindowFactoryState": "false",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/lor3n/Documents/GitHub/Cledeo",
+    "last_opened_file_path": "C:/Users/lor3n/Documents/GitHub/Battleship/CMakeLists.txt",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.customizations",
     "structure.view.defaults.are.configured": "true"
