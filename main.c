@@ -10,5 +10,6 @@ int main()
     t_game b;
     init(&b);
     AnsiAffichage(b);
+    miseTest();
     return 0;
 }

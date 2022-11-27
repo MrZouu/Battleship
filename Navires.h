@@ -11,6 +11,9 @@
 #define nbD 3
 #define nbSM 4
 
+#define MAX 15
+#define MIN 0
+
 typedef struct PorteAvion{  //7 CASES
     char symbole;
     int taille;
@@ -44,8 +47,14 @@ t_porteAv SaisirPa(t_porteAv * pA);
 t_croiseur SaisirC(t_porteAv * C);
 t_destroy SaisirD(t_porteAv * D);
 t_sousMarin SaisirSm(t_porteAv * Sm);
-void afficherM(t_croiseur C);
-void afficherTableM(t_croiseur * qt2);
+
+void SaisirFlotteC(t_croiseur * qt2);
+void SaisirFlotteD(t_destroy * qt3);
+void SaisirFlotteSm(t_sousMarin * qt4);
+
+void afficherC(t_croiseur C);
+void afficherPa(t_porteAv pA);
+void afficherFlotte(t_croiseur * qt2);
 
 #endif //BATTLESHIP_NAVIRES_H
 
