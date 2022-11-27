@@ -9,7 +9,7 @@
 #include "AnsiAffichage.h"
 
 void affecterC(t_croiseur C);
-void affecterPa(t_porteAv pA);
+void affecterPa(t_game * b);
 void FlotteC(t_croiseur * qt2);
 
 #endif //BATTLESHIP_PLATEAU_H

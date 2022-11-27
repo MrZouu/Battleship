@@ -3,7 +3,7 @@
 //
 
 #include "Plateau.h"
-
+#include "AnsiAffichage.h"
 
 void placement(t_game b)
 {
@@ -12,11 +12,11 @@ void placement(t_game b)
 
 void affecterC(t_croiseur C)
 {
+
     //Affichage Caracteristiques meuble
     printf("Symbole: %c\n",C.symbole);
     printf("Taille: %d\n",C.taille);
-    printf("posX: %d\n",C.pos_X);
-    printf("posY: %d\n",C.pos_Y);
+
 }
 
 void FlotteC(t_croiseur * qt2)
@@ -28,11 +28,13 @@ void FlotteC(t_croiseur * qt2)
     }
 }
 
-void affecterPa(t_porteAv pA)
+void affecterPa(t_game * b)
 {
-    //Affichage Caracteristiques meuble
-    printf("Symbole: %c\n",pA.symbole);
+    /*t_porteAv pA;
+    printf("%d\n",pA.pos_X);*/
+    //b->board[pA.pos_X][pA.pos_Y]='P';
+    /*printf("Symbole: %c\n",pA.symbole);
     printf("Taille: %d\n",pA.taille);
     printf("posX: %d\n",pA.pos_X);
-    printf("posY: %d\n",pA.pos_Y);
+    printf("posY: %d\n",pA.pos_Y);*/
 }

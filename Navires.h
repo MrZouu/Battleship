@@ -6,6 +6,9 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include "AnsiAffichage.h"
+
 //Nombre de navires
 #define nbC 2
 #define nbD 3
@@ -42,7 +45,7 @@ typedef struct SousMarin{   //1 CASE
     int pos_Y;
 }t_sousMarin;
 
-void initialisationFlotte();
+void initialisationFlotte(t_game * b);
 t_porteAv SaisirPa(t_porteAv * pA);
 t_croiseur SaisirC(t_porteAv * C);
 t_destroy SaisirD(t_porteAv * D);

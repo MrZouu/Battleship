@@ -2,10 +2,11 @@
 // Created by Lorenzo on 27/11/2022.
 //
 #include "Navires.h"
+#include "Plateau.h"
 
 //Définir caractéristiques navire, position aléatoire, initialisation
 //Navires a poser sur lignes impaires et colonnes pas multiples de 3
-void initialisationFlotte()
+void initialisationFlotte(t_game * b)
 {
     t_porteAv qt1;
     t_croiseur qt2[nbC];
@@ -16,8 +17,8 @@ void initialisationFlotte()
     SaisirFlotteC(&qt2);
     SaisirFlotteD(&qt3);
     SaisirFlotteSm(&qt4);
-    //afficherFlotte(qt2);
-    //afficherPa(qt1);
+    affecterPa(b);
+
 }
 
 t_porteAv SaisirPa(t_porteAv * pA)
