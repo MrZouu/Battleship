@@ -19,12 +19,10 @@
   <component name="ChangeListManager">
     <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Affectation flotte test2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnsiAffichage.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Navires.c" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Navires.h" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plateau.c" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plateau.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,26 +50,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "last_opened_file_path": "C:/Users/lor3n/Documents/GitHub/Cledeo",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.customizations",
-    "structure.view.defaults.are.configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lor3n/Documents/GitHub/Cledeo&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
+    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Battleship" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="Battleship" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="Battleship">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -97,6 +90,8 @@
       <workItem from="1669551696286" duration="73000" />
       <workItem from="1669551781050" duration="367000" />
       <workItem from="1669552161216" duration="6005000" />
+      <workItem from="1669643029401" duration="536000" />
+      <workItem from="1669666553110" duration="2946000" />
     </task>
     <task id="LOCAL-00001" summary="Test remplissage struct navires">
       <created>1669511278301</created>

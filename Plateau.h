@@ -8,8 +8,9 @@
 #include "Navires.h"
 #include "AnsiAffichage.h"
 
-void affecterC(t_croiseur C);
-void affecterPa(t_game * b);
-void FlotteC(t_croiseur * qt2);
+void affecterPorteAv(t_porteAv * qt1, t_game * b);
+void affecterCroiseur(t_croiseur * qt2, t_game * b);
+void affecterDestroyer(t_destroy * qt3, t_game * b);
+void affecterSousMarin(t_sousMarin * qt4, t_game * b);
 
 #endif //BATTLESHIP_PLATEAU_H
