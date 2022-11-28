@@ -46,10 +46,10 @@ typedef struct SousMarin{   //1 CASE
 }t_sousMarin;
 
 void initialisationFlotte(t_game * b);
-void SaisirPa(t_porteAv * pA);
-void SaisirC(t_porteAv * C);
-void SaisirD(t_porteAv * D);
-void SaisirSm(t_porteAv * Sm);
+void SaisiePa(t_porteAv * pA);
+void SaisieC(t_croiseur * C);
+void SaisieD(t_destroy * D);
+void SaisieSm(t_sousMarin * Sm);
 
 void afficherCroiseur(t_croiseur * qt2);
 

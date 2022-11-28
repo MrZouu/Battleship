@@ -14,18 +14,18 @@ void initialisationFlotte(t_game * b)
     t_destroy qt3[nbD];
     t_sousMarin qt4[nbSM];
     //Initialiser jeu
-    SaisirPa(&qt1);
-    SaisirC(&qt2);
-    SaisirD(&qt3);
-    SaisirSm(&qt4);
-    afficherCroiseur(qt2);
+    SaisiePa(&qt1);
+    SaisieC(&qt2);
+    SaisieD(&qt3);
+    SaisieSm(&qt4);
+    //afficherCroiseur(qt2);
     affecterPorteAv(&qt1,b);
     affecterCroiseur(qt2,b);
     affecterDestroyer(qt3,b);
     affecterSousMarin(qt4,b);
 }
 
-void SaisirPa(t_porteAv * pA)
+void SaisiePa(t_porteAv * pA)
 {
     pA->symbole='P';
     pA->taille=7;
@@ -33,7 +33,7 @@ void SaisirPa(t_porteAv * pA)
     pA->pos_Y=rand() % (MAX +1 -MIN)+MIN; ;
 }
 
-void SaisirC(t_porteAv * C)
+void SaisieC(t_croiseur * C)
 {
     for(int i=0;i<nbC;i++)  //Saisie du tableau de structure
     {
@@ -44,7 +44,7 @@ void SaisirC(t_porteAv * C)
     }
 }
 
-void SaisirD(t_porteAv * D)
+void SaisieD(t_destroy * D)
 {
     for(int i=0;i<nbD;i++)  //Saisie du tableau de structure
     {
@@ -56,7 +56,7 @@ void SaisirD(t_porteAv * D)
 
 }
 
-void SaisirSm(t_porteAv * Sm)
+void SaisieSm(t_sousMarin * Sm)
 {
     for(int i=0;i<nbSM;i++)  //Saisie du tableau de structure
     {
