@@ -7,6 +7,7 @@
 
 int main()
 {
+    srand(time(NULL));
     t_game b;
     init(&b);
     AnsiAffichage(b);
