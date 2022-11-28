@@ -2,6 +2,7 @@
 // Created by Mat Plat on 21/11/2022.
 //
 #include "AnsiAffichage.h"
+#include "Navires.h"
 //DA = angle haut gauche
 //BF = angle haut droit
 //C0 = angle bas gauche
@@ -71,11 +72,14 @@ void init(t_game * b){
             b->board[30][j]=0xC4;    //Trait horizontal
     }
     b->board[30][45]=0xD9; //angle bas DROIT
+
+    initialisationFlotte(b);
 }
 
 
 
 void AnsiAffichage(t_game b){
+
     int num=0;  //Numéros sur ligne
     char lettre = 'A'; //Lettres sur colonne
     printf("    ");
