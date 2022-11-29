@@ -3,6 +3,7 @@
 //
 #include "Navires.h"
 #include "Plateau.h"
+#include "AnsiAffichage.h"
 
 //Définir caractéristiques navire, position aléatoire, initialisation
 //Navires a poser sur lignes impaires et colonnes pas multiples de 3
@@ -13,15 +14,18 @@ void initialisationFlotte(t_game * b)
     t_destroy qt3[nbD];
     t_sousMarin qt4[nbSM];
     //Initialiser jeu
-    SaisirPa(&qt1);
-    SaisirFlotteC(&qt2);
-    SaisirFlotteD(&qt3);
-    SaisirFlotteSm(&qt4);
-    affecterPa(b);
-
+    SaisiePa(&qt1);
+    SaisieC(&qt2);
+    SaisieD(&qt3);
+    SaisieSm(&qt4);
+    //afficherCroiseur(qt2);
+    affecterPorteAv(&qt1,b);
+    affecterCroiseur(qt2,b);
+    affecterDestroyer(qt3,b);
+    affecterSousMarin(qt4,b);
 }
 
-t_porteAv SaisirPa(t_porteAv * pA)
+void SaisiePa(t_porteAv * pA)
 {
     pA->symbole='P';
     pA->taille=7;
@@ -29,52 +33,49 @@ t_porteAv SaisirPa(t_porteAv * pA)
     pA->pos_Y=rand() % (MAX +1 -MIN)+MIN; ;
 }
 
-t_croiseur SaisirC(t_porteAv * C)
-{   //Caracteristiques meuble
-    C->symbole='C';
-    C->taille=5;
-    C->pos_X=rand() % (MAX +1 -MIN)+MIN; //max +1 - min;
-    C->pos_Y=rand() % (MAX +1 -MIN)+MIN; //max +1 - min;
-}
-
-t_destroy SaisirD(t_porteAv * D)
-{   //Caracteristiques meuble
-    D->symbole='D';
-    D->taille=3;
-    D->pos_X=rand() % (MAX +1 -MIN)+MIN; ;
-    D->pos_Y=rand() % (MAX +1 -MIN)+MIN; ;
-}
-
-t_sousMarin SaisirSm(t_porteAv * Sm)
-{   //Caracteristiques meuble
-    Sm->symbole='S';
-    Sm->taille=1;
-    Sm->pos_X=rand() % (MAX +1 -MIN)+MIN; ;
-    Sm->pos_Y=rand() % (MAX +1 -MIN)+MIN; ;
-}
-///------------------------AFFICHAGE---------------------------///
-
-
-
-///-------------------------SAISIE----------------------------///
-
-void SaisirFlotteC(t_croiseur * qt2){
+void SaisieC(t_croiseur * C)
+{
     for(int i=0;i<nbC;i++)  //Saisie du tableau de structure
     {
-        SaisirC(&qt2[i]); //Appel de la fonction saisie qui retourne
+        C[i].symbole='C';
+        C[i].taille=5;
+        C[i].pos_X=rand() % (MAX +1 -MIN)+MIN; //max +1 - min;
+        C[i].pos_Y=rand() % (MAX +1 -MIN)+MIN; //max +1 - min;
     }
 }
 
-void SaisirFlotteD(t_destroy * qt3){
+void SaisieD(t_destroy * D)
+{
     for(int i=0;i<nbD;i++)  //Saisie du tableau de structure
     {
-        SaisirC(&qt3[i]); //Appel de la fonction saisie qui retourne
+        D[i].symbole='D';
+        D[i].taille=3;
+        D[i].pos_X=rand() % (MAX +1 -MIN)+MIN;
+        D[i].pos_Y=rand() % (MAX +1 -MIN)+MIN;
     }
+
 }
 
-void SaisirFlotteSm(t_sousMarin * qt4){
+void SaisieSm(t_sousMarin * Sm)
+{
     for(int i=0;i<nbSM;i++)  //Saisie du tableau de structure
     {
-        SaisirC(&qt4[i]); //Appel de la fonction saisie qui retourne
+        Sm[i].symbole='S';
+        Sm[i].taille=1;
+        Sm[i].pos_X=rand() % (MAX +1 -MIN)+MIN;
+        Sm[i].pos_Y=rand() % (MAX +1 -MIN)+MIN;
+    }
+}
+///------------------------AFFICHAGE TEST---------------------------///
+
+
+void afficherCroiseur(t_croiseur * qt2)
+{
+    for(int i=0;i<nbC;i++)  //Saisie du tableau de structure
+    {
+        printf("Symbole: %c\n",qt2[i].symbole);
+        printf("Taille: %d\n",qt2[i].taille);
+        printf("posX: %d\n",qt2[i].pos_X);
+        printf("posY: %d\n",qt2[i].pos_Y);
     }
 }

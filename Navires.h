@@ -20,8 +20,8 @@
 typedef struct PorteAvion{  //7 CASES
     char symbole;
     int taille;
-    int pos_X;
-    int pos_Y;
+    int pos_X; ///Lignes
+    int pos_Y; ///Colonnes
 }t_porteAv;
 
 typedef struct Croiseur{    //5 CASES
@@ -46,16 +46,12 @@ typedef struct SousMarin{   //1 CASE
 }t_sousMarin;
 
 void initialisationFlotte(t_game * b);
-t_porteAv SaisirPa(t_porteAv * pA);
-t_croiseur SaisirC(t_porteAv * C);
-t_destroy SaisirD(t_porteAv * D);
-t_sousMarin SaisirSm(t_porteAv * Sm);
+void SaisiePa(t_porteAv * pA);
+void SaisieC(t_croiseur * C);
+void SaisieD(t_destroy * D);
+void SaisieSm(t_sousMarin * Sm);
 
-void SaisirFlotteC(t_croiseur * qt2);
-void SaisirFlotteD(t_destroy * qt3);
-void SaisirFlotteSm(t_sousMarin * qt4);
-
-
+void afficherCroiseur(t_croiseur * qt2);
 
 #endif //BATTLESHIP_NAVIRES_H
 
