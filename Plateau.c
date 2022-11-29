@@ -64,3 +64,4 @@ void affecterSousMarin(t_sousMarin * qt4, t_game * b)
 }
 
 //Ceci est un test dans le plateau de jeu
+//test 2

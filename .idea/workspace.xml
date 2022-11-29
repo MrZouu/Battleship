@@ -17,10 +17,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Test Plateau.c">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plateau.c" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
-    </list>
+    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Test Plateau.c" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -34,6 +31,11 @@
     <option name="NEW_BASE" value="origin/matheo-dev" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -121,7 +123,21 @@
       <option name="project" value="LOCAL" />
       <updated>1669557835162</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test Plateau.c">
+      <created>1669709489900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669709489900</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test Plateau.c">
+      <created>1669709566604</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669709566604</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +154,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="main" />
+                        <option value="matheo-dev" />
                       </list>
                     </value>
                   </entry>
@@ -154,6 +170,7 @@
     <MESSAGE value="Test remplissage struct navires" />
     <MESSAGE value="test" />
     <MESSAGE value="Saisie complète flotte" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saisie complète flotte" />
+    <MESSAGE value="Test Plateau.c" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test Plateau.c" />
   </component>
 </project>
