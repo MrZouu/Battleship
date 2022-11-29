@@ -85,7 +85,7 @@ void AnsiAffichage(t_game b){
     printf("    ");
     for (int i=0; i<15; i++)
     {
-        (num<10)? printf ("%d  ", num) : printf ("%d ", num);//Operateur ternaire Affichage des numéros au dessus des colonnes
+        (num<10)? printf ("%d  ", num) : printf ("%d ", num);   //Operateur ternaire Affichage des numéros au dessus des colonnes
         num++;
     }
     printf("\n");
@@ -99,3 +99,4 @@ void AnsiAffichage(t_game b){
         printf("\n");
     }
 }
+

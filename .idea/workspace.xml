@@ -17,7 +17,25 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Test Plateau.c" />
+    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="modif test">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnsiAffichage.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnsiAffichage.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Navires.h" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plateau.c" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plateau.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Battleship" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Battleship" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+    </list>
+    <list id="412713ec-b430-4780-93ee-0ecd1e6ba3b6" name="Changes by Lorenzo" comment="">
+      <change beforePath="$PROJECT_DIR$/AnsiAffichage.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnsiAffichage.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Navires.c" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plateau.c" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,6 +55,30 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Plateau.c">
+      <ranges>
+        <range start1="12" end1="12" start2="12" end2="21" changelist="412713ec-b430-4780-93ee-0ecd1e6ba3b6" />
+        <range start1="64" end1="67" start2="73" end2="74" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/AnsiAffichage.c">
+      <ranges>
+        <range start1="81" end1="82" start2="81" end2="81" changelist="412713ec-b430-4780-93ee-0ecd1e6ba3b6" />
+        <range start1="87" end1="88" start2="86" end2="87" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="102" end1="102" start2="101" end2="116" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/AnsiAffichage.h">
+      <ranges>
+        <range start1="10" end1="10" start2="10" end2="11" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="13" end1="13" start2="14" end2="19" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="17" end1="19" start2="23" end2="25" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="21" end1="22" start2="27" end2="28" changelist="412713ec-b430-4780-93ee-0ecd1e6ba3b6" />
+        <range start1="25" end1="25" start2="31" end2="34" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -94,6 +136,7 @@
       <workItem from="1669552161216" duration="6005000" />
       <workItem from="1669643029401" duration="536000" />
       <workItem from="1669666553110" duration="2946000" />
+      <workItem from="1669710244310" duration="4384000" />
     </task>
     <task id="LOCAL-00001" summary="Test remplissage struct navires">
       <created>1669511278301</created>
@@ -137,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669709566604</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="modif test">
+      <created>1669709810727</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669709810727</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -171,6 +221,7 @@
     <MESSAGE value="test" />
     <MESSAGE value="Saisie complète flotte" />
     <MESSAGE value="Test Plateau.c" />
-    <option name="LAST_COMMIT_MESSAGE" value="Test Plateau.c" />
+    <MESSAGE value="modif test" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif test" />
   </component>
 </project>
