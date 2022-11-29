@@ -4,12 +4,14 @@
 
 #include "Navires.h"
 #include "AnsiAffichage.h"
-
+#include "Plateau.h"
+#include "Game.h"
 int main()
 {
     srand(time(NULL));
     t_game b;
     init(&b);
+    initialisationFlotte(&b);
     AnsiAffichage(b);
     return 0;
 }

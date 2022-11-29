@@ -11,16 +11,13 @@
 #include "Navires.h"
 
 //Nombre de navires
+#define nbPa 1
 #define nbC 2
 #define nbD 3
 #define nbSM 4
 
 #define MAX 14  //Position MAX
 #define MIN 0   //Position MIN
-/*
-void initialisationFlotte(t_game * b);
-void saisieBateaux(t_bateau * boat);*/
-
 
 
 typedef enum typeBat{
@@ -37,10 +34,17 @@ typedef struct coordonnees{
 
 typedef struct bateaux{
     e_type type_bateau;           //Type du bateau
-//  e_allignement allgnement;     //Allignement du bateau sur la grille
+/// e_allignement allgnement;     //Allignement du bateau sur la grille
     t_coord position;             //Coordonnées d'un bateau
     int size;                     //Taille d'un bateau
 }t_bateau;
+
+
+
+void initialisationFlotte(t_game * b);
+void SaisieBateaux(t_bateau * boat);
+void AfficherBateaux(t_bateau * boat);
+
 
 /*typedef struct celluleTab{
     t_coord pos;        //Positon d'une cellule dans un bateau

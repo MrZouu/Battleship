@@ -8,10 +8,10 @@
 #include "Navires.h"
 #include "AnsiAffichage.h"
 
-#define SYMBOLE_PORTEAVION "P"
-#define SYMBOLE_SOUSMARIN "S"
-#define SYMBOLE_DESTROYEUR "D"
-#define SYMBOLE_CROISEUR "C"
+#define SYMBOLE_PORTEAVION 'P'
+#define SYMBOLE_SOUSMARIN 'S'
+#define SYMBOLE_DESTROYEUR 'D'
+#define SYMBOLE_CROISEUR 'C'
 
 
 void affecterBateau(t_bateau * boat, t_game *b);

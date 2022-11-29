@@ -2,32 +2,18 @@
 // Created by Mat Plat on 21/11/2022.
 //
 #include "AnsiAffichage.h"
-#include "Navires.h"
-//DA = angle haut gauche
-//BF = angle haut droit
-//C0 = angle bas gauche
-//D9 = angle bas droit
-//C5 = croix
-//B3 = trait vertical
-//C4 = trait horizontal
-//B4 = T penché a droite
-//C1 = T a l'envers
-//C2 = T
-//C3 = T penché a gauche
+
 #define ANGLE_HAUT_GAUCHE 0xDA
 #define ANGLE_HAUT_DROIT 0xBF
 #define ANGLE_BAS_GAUCHE 0xC0
 #define ANGLE_BAS_DROIT 0xD9
-
 #define CROIX 0xC5
 #define TRAIT_VERTICAL 0xB3
 #define TRAIT_HORIZONTAL 0xC4
-
 #define T_PENCHE_DROITE 0xB4
 #define T_INVERSE 0xC1
 #define T_NORMAL 0xC2
 #define T_PENCHE_GAUCHE 0xC3
-
 
 void init(t_game * b){
     for(int i=0;i<=LIGNES;i++) //Initialisation tableau à 0;
@@ -91,7 +77,6 @@ void init(t_game * b){
 
 
 void AnsiAffichage(t_game b){
-
     int num=0;  //Numéros sur ligne
     char lettre = 'A'; //Lettres sur colonne
     printf("    ");
