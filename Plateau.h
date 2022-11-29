@@ -8,9 +8,14 @@
 #include "Navires.h"
 #include "AnsiAffichage.h"
 
-void affecterPorteAv(t_porteAv * qt1, t_game * b);
-void affecterCroiseur(t_croiseur * qt2, t_game * b);
-void affecterDestroyer(t_destroy * qt3, t_game * b);
-void affecterSousMarin(t_sousMarin * qt4, t_game * b);
+#define SYMBOLE_PORTEAVION "P"
+#define SYMBOLE_SOUSMARIN "S"
+#define SYMBOLE_DESTROYEUR "D"
+#define SYMBOLE_CROISEUR "C"
+
+
+void affecterBateau(t_bateau * boat, t_game *b);
+
+char getSymbolFromBateau(e_type type_bateau);
 
 #endif //BATTLESHIP_PLATEAU_H

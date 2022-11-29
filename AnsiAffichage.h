@@ -15,12 +15,12 @@
 typedef struct game{
     char board[LIGNES][COLONNES];
 }t_game;
-
+/*
 typedef struct Plateau{
     int grille[LIGNES][COLONNES];
     int grilleAdverse[LIGNES][COLONNES];
 }t_plateau;
-
+*/
 void init(t_game * b);
 void AnsiAffichage(t_game b);
 

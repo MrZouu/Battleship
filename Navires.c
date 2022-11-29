@@ -8,7 +8,7 @@
 //Définir caractéristiques navire, position aléatoire, initialisation
 //Navires a poser sur lignes impaires et colonnes pas multiples de 3
 void initialisationFlotte(t_game * b)
-{
+{/*
     t_porteAv qt1;
     t_croiseur qt2[nbC];
     t_destroy qt3[nbD];
@@ -22,9 +22,9 @@ void initialisationFlotte(t_game * b)
     affecterPorteAv(&qt1,b);
     affecterCroiseur(qt2,b);
     affecterDestroyer(qt3,b);
-    affecterSousMarin(qt4,b);
+    affecterSousMarin(qt4,b);*/
 }
-
+/*
 void SaisiePa(t_porteAv * pA)
 {
     pA->symbole='P';
@@ -78,4 +78,4 @@ void afficherCroiseur(t_croiseur * qt2)
         printf("posX: %d\n",qt2[i].pos_X);
         printf("posY: %d\n",qt2[i].pos_Y);
     }
-}
+}*/
