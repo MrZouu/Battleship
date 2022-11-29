@@ -1,0 +1,72 @@
+Index: Plateau.c
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>//\n// Created by Lorenzo on 27/11/2022.\n//\n\n#include \"Plateau.h\"\n#include \"AnsiAffichage.h\"\n\nvoid placement(t_game b)\n{\n\n}\n\nvoid affecterPorteAv(t_porteAv * qt1, t_game * b)\n{\n    int X, Y;\n        X=((qt1->pos_X)*2)+1; //Calcul pour afficher sur lignes\n        Y=((qt1->pos_Y)*3)+1; //Calcul pour afficher sur colonnes\n        b->board[X][Y]='P';\n        for(int i=0;i<(qt1->taille);i+=2) //Affichage sur plusieures cases ( ici 7 ) vertical\n        {\n            b->board[X+i][Y]='P';\n        }\n}\n\nvoid affecterCroiseur(t_croiseur * qt2, t_game * b)\n{\n    int X, Y;\n    for(int i=0;i<nbC;i++)  //Saisie du tableau de structure\n    {\n        X=((qt2[i].pos_X)*2)+1; //Calcul pour afficher sur lignes\n        Y=((qt2[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes\n        b->board[X][Y]='C';\n        for(int j=0;j<(qt2[i].taille);j+=2) //Affichage sur plusieures cases ( ici 5 ) vertical\n        {\n            b->board[X+j][Y]='C';\n        }\n    }\n}\n\nvoid affecterDestroyer(t_destroy * qt3, t_game * b)\n{\n    int X, Y;\n    for(int i=0;i<nbD;i++)  //Saisie du tableau de structure\n    {\n        X=((qt3[i].pos_X)*2)+1; //Calcul pour afficher sur lignes\n        Y=((qt3[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes\n        b->board[X][Y]='D';\n        for(int j=0;j<(qt3[i].taille);j+=2) //Affichage sur plusieures cases ( ici 3 ) vertical\n        {\n            b->board[X+j][Y]='D';\n        }\n    }\n}\n\nvoid affecterSousMarin(t_sousMarin * qt4, t_game * b)\n{\n    int X, Y;\n    for(int i=0;i<nbSM;i++)  //Saisie du tableau de structure\n    {\n        X=((qt4[i].pos_X)*2)+1; //Calcul pour afficher sur lignes\n        Y=((qt4[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes\n        b->board[X][Y]='S';\n    }\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Plateau.c b/Plateau.c
+--- a/Plateau.c	(revision d13c59ae507b1d595a813d9668c492cbb9f728c7)
++++ b/Plateau.c	(date 1669708592301)
+@@ -61,4 +61,6 @@
+         Y=((qt4[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes
+         b->board[X][Y]='S';
+     }
+-}
+\ No newline at end of file
++}
++
++//Ceci est un test dans le plateau de jeu
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"CMakePresetLoader\">{\n  &quot;useNewFormat&quot;: true\n}</component>\n  <component name=\"CMakeReloadState\">\n    <option name=\"reloaded\" value=\"true\" />\n  </component>\n  <component name=\"CMakeRunConfigurationManager\">\n    <generated>\n      <config projectName=\"Battleship\" targetName=\"Battleship\" />\n    </generated>\n  </component>\n  <component name=\"CMakeSettings\">\n    <configurations>\n      <configuration PROFILE_NAME=\"Debug\" ENABLED=\"true\" CONFIG_NAME=\"Debug\" />\n    </configurations>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"13ee9d51-39af-4389-9dff-47cd159297be\" name=\"Changes\" comment=\"Affectation flotte test2\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Navires.c\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Navires.c\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Navires.h\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Navires.h\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/Plateau.c\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Plateau.c\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ClangdSettings\">\n    <option name=\"formatViaClangd\" value=\"false\" />\n  </component>\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"CMakeBuildProfile:Debug\" />\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectApplicationVersion\">\n    <option name=\"ide\" value=\"CLion\" />\n    <option name=\"majorVersion\" value=\"2022\" />\n    <option name=\"minorVersion\" value=\"2.4\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2Hzyh7fWa6ikvzMBA9xIkDxVPCH\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,\n    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,\n    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,\n    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,\n    &quot;last_opened_file_path&quot;: &quot;C:/Users/lor3n/Documents/GitHub/Cledeo&quot;,\n    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,\n    &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;\n  }\n}</component>\n  <component name=\"RunManager\">\n    <configuration default=\"true\" type=\"CLionExternalRunConfiguration\" factoryName=\"Application\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\">\n      <method v=\"2\">\n        <option name=\"CLION.EXTERNAL.BUILD\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Battleship\" type=\"CMakeRunConfiguration\" factoryName=\"Application\" nameIsGenerated=\"true\" REDIRECT_INPUT=\"false\" ELEVATE=\"false\" USE_EXTERNAL_CONSOLE=\"false\" PASS_PARENT_ENVS_2=\"true\" PROJECT_NAME=\"Battleship\" TARGET_NAME=\"Battleship\" CONFIG_NAME=\"Debug\" RUN_TARGET_PROJECT_NAME=\"Battleship\" RUN_TARGET_NAME=\"Battleship\">\n      <method v=\"2\">\n        <option name=\"com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"13ee9d51-39af-4389-9dff-47cd159297be\" name=\"Changes\" comment=\"\" />\n      <created>1669302325341</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1669302325341</updated>\n      <workItem from=\"1669302328818\" duration=\"51000\" />\n      <workItem from=\"1669508939120\" duration=\"2352000\" />\n      <workItem from=\"1669548637409\" duration=\"187000\" />\n      <workItem from=\"1669548835798\" duration=\"434000\" />\n      <workItem from=\"1669549578848\" duration=\"1524000\" />\n      <workItem from=\"1669551126758\" duration=\"308000\" />\n      <workItem from=\"1669551483321\" duration=\"142000\" />\n      <workItem from=\"1669551636408\" duration=\"53000\" />\n      <workItem from=\"1669551696286\" duration=\"73000\" />\n      <workItem from=\"1669551781050\" duration=\"367000\" />\n      <workItem from=\"1669552161216\" duration=\"6005000\" />\n      <workItem from=\"1669643029401\" duration=\"536000\" />\n      <workItem from=\"1669666553110\" duration=\"2946000\" />\n      <workItem from=\"1669672045515\" duration=\"1996000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Test remplissage struct navires\">\n      <created>1669511278301</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1669511278301</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Test remplissage struct navires\">\n      <created>1669549600078</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1669549600078</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"test\">\n      <created>1669549938278</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1669549938278</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"Saisie complète flotte\">\n      <created>1669557835162</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1669557835162</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Test remplissage struct navires\" />\n    <MESSAGE value=\"test\" />\n    <MESSAGE value=\"Saisie complète flotte\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Saisie complète flotte\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision d13c59ae507b1d595a813d9668c492cbb9f728c7)
++++ b/.idea/workspace.xml	(date 1669708602613)
+@@ -17,10 +17,8 @@
+     </configurations>
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Affectation flotte test2">
++    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Test Plateau.c">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Navires.c" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.c" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Navires.h" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.h" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Plateau.c" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -32,6 +30,9 @@
+     <option name="formatViaClangd" value="false" />
+   </component>
+   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
++  <component name="Git.Rebase.Settings">
++    <option name="NEW_BASE" value="origin/matheo-dev" />
++  </component>
+   <component name="Git.Settings">
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+@@ -64,11 +65,6 @@
+   }
+ }</component>
+   <component name="RunManager">
+-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+-      <method v="2">
+-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+-      </method>
+-    </configuration>
+     <configuration name="Battleship" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="Battleship" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="Battleship">
+       <method v="2">
+         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+@@ -96,7 +92,6 @@
+       <workItem from="1669552161216" duration="6005000" />
+       <workItem from="1669643029401" duration="536000" />
+       <workItem from="1669666553110" duration="2946000" />
+-      <workItem from="1669672045515" duration="1996000" />
+     </task>
+     <task id="LOCAL-00001" summary="Test remplissage struct navires">
+       <created>1669511278301</created>

@@ -62,3 +62,4 @@ void affecterSousMarin(t_sousMarin * qt4, t_game * b)
         b->board[X][Y]='S';
     }
 }
+*/

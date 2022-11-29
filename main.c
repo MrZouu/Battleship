@@ -11,5 +11,7 @@ int main()
     t_game b;
     init(&b);
     AnsiAffichage(b);
+    printf("uygugouyfyitf");
+//    printf(0x22)
     return 0;
 }
