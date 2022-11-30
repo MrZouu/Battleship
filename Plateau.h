@@ -13,6 +13,12 @@
 #define SYMBOLE_DESTROYEUR 'D'
 #define SYMBOLE_CROISEUR 'C'
 
+#define NUMEROBATEAU i+48
+
+#define TESTHORIZONTAL Y+(k*3)
+#define AFFICHAGEHORIZONTAL Y+(j*3)
+#define H_CASENUMERO Y+(j*3)+1
+
 
 void affecterBateau(t_bateau * boat, t_game *b);
 

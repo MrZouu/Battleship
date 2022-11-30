@@ -5,11 +5,13 @@
 
 #ifndef NAVIRES_H_GAME_H
 #define NAVIRES_H_GAME_H
-
-#include <windows.h>
-#include "Plateau.h"
 #include <stdio.h>
 #include <string.h>
+
+#include <windows.h>
+#include <conio.h>
+#include "Plateau.h"
+
 
 #define TIRE_DANS_VIDE 0x9D
 #define TIRE_TOUCHE 0xDB

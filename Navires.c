@@ -9,10 +9,10 @@
 //Navires a poser sur lignes impaires et colonnes pas multiples de 3
 void initialisationFlotte(t_game * b)
 {
-    t_bateau nav[10];
-    SaisieBateaux(&nav);
-    //AfficherBateaux(nav);
-    affecterBateau(nav,b);
+    t_bateau boat[10];
+    SaisieBateaux(boat);
+    //AfficherBateaux(boat);
+    affecterBateau(boat,b);
 }
 
 
@@ -24,33 +24,27 @@ void SaisieBateaux(t_bateau * boat)
             {
                 boat[i].type_bateau=nbPa;
                 boat[i].orientation=rand()&1;
-                boat[i].size=7;
-                boat[i].position.x=rand() % (MAX +1 -MIN)+MIN;
-                boat[i].position.y=rand() % (MAX +1 -MIN)+MIN;
+                TAILLEBATEAU=7;
             }
             if(i>=1&&i<=2)
             {
                 boat[i].type_bateau=nbC;
                 boat[i].orientation=rand()&1;
-                boat[i].size=5;
-                boat[i].position.x=rand() % (MAX +1 -MIN)+MIN;
-                boat[i].position.y=rand() % (MAX +1 -MIN)+MIN;
+                TAILLEBATEAU=5;
+
             }
             if(i>=3&&i<=5)
             {
                 boat[i].type_bateau=nbD;
                 boat[i].orientation=rand()&1;
-                boat[i].size=3;
-                boat[i].position.x=rand() % (MAX +1 -MIN)+MIN;
-                boat[i].position.y=rand() % (MAX +1 -MIN)+MIN;
+                TAILLEBATEAU=3;
+
             }
             if(i>=6&&i<=9)
             {
                 boat[i].type_bateau=nbSM;
                 boat[i].orientation=rand()&1;
-                boat[i].size=1;
-                boat[i].position.x=rand() % (MAX +1 -MIN)+MIN;
-                boat[i].position.y=rand() % (MAX +1 -MIN)+MIN;
+                TAILLEBATEAU=1;
             }
         }
 }
