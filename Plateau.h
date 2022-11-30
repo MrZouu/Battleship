@@ -16,6 +16,6 @@
 
 void affecterBateau(t_bateau * boat, t_game *b);
 
-char getSymbolFromBateau(e_type type_bateau);
+char getSymbolFromBateau(t_bateau boat);
 
 #endif //BATTLESHIP_PLATEAU_H

@@ -18,11 +18,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="modif une structure v1">
-      <change afterPath="$PROJECT_DIR$/Game.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AnsiAffichage.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AnsiAffichage.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.c" beforeDir="false" afterPath="$PROJECT_DIR$/Game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Navires.c" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Navires.h" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Plateau.c" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
@@ -30,15 +30,18 @@
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.23.2/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/rules.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
-    <list id="32870e74-69c2-41e0-bcd0-e05ac37dd5a3" name="Changes by clement" comment="" />
     <list id="52e8c824-8865-4eb3-8165-8f3ef2af328d" name="Changes by matplat" comment="">
+      <change beforePath="$PROJECT_DIR$/Game.c" beforeDir="false" afterPath="$PROJECT_DIR$/Game.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Game.h" beforeDir="false" afterPath="$PROJECT_DIR$/Game.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Navires.h" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plateau.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,33 +65,53 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Navires.h">
+    <file path="$PROJECT_DIR$/Game.c">
       <ranges>
-        <range start1="10" end1="11" start2="10" end2="10" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
-        <range start1="13" end1="13" start2="12" end2="13" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
-        <range start1="19" end1="23" start2="19" end2="19" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
-        <range start1="26" end1="30" start2="22" end2="26" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
-        <range start1="39" end1="40" start2="35" end2="36" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
-        <range start1="43" end1="43" start2="39" end2="46" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="3" end1="4" start2="3" end2="3" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="5" end1="5" start2="4" end2="6" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="8" end1="9" start2="9" end2="10" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="13" end1="14" start2="14" end2="16" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="17" end1="18" start2="19" end2="21" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="20" end1="22" start2="23" end2="23" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="24" end1="25" start2="25" end2="29" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="27" end1="27" start2="31" end2="32" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="28" end1="28" start2="33" end2="57" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="39" end1="40" start2="68" end2="69" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="41" end1="42" start2="70" end2="70" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="50" end1="50" start2="78" end2="79" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="52" end1="53" start2="81" end2="85" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
       </ranges>
     </file>
-    <file path="$PROJECT_DIR$/Plateau.h">
+    <file path="$PROJECT_DIR$/Navires.h">
       <ranges>
-        <range start1="7" end1="7" start2="7" end2="8" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
-        <range start1="10" end1="14" start2="11" end2="15" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
-        <range start1="18" end1="19" start2="19" end2="23" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="36" end1="37" start2="36" end2="37" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="39" end1="39" start2="39" end2="40" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="46" end1="46" start2="47" end2="48" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="52" end1="53" start2="54" end2="55" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
       </ranges>
     </file>
     <file path="$PROJECT_DIR$/main.c">
       <ranges>
-        <range start1="6" end1="7" start2="6" end2="8" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
-        <range start1="12" end1="12" start2="13" end2="14" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
-        <range start1="13" end1="13" start2="15" end2="17" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="3" end1="4" start2="3" end2="3" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="8" end1="8" start2="7" end2="8" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="14" end1="14" start2="14" end2="15" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="15" end1="16" start2="16" end2="22" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/Game.h">
+      <ranges>
+        <range start1="7" end1="7" start2="7" end2="9" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="9" end1="9" start2="11" end2="12" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="10" end1="12" start2="13" end2="14" changelist="52e8c824-8865-4eb3-8165-8f3ef2af328d" />
+        <range start1="13" end1="13" start2="15" end2="25" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
       </ranges>
     </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -116,11 +139,6 @@
   }
 }</component>
   <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Battleship" type="CMakeRunConfiguration" factoryName="Application" nameIsGenerated="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Battleship" TARGET_NAME="Battleship" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Battleship" RUN_TARGET_NAME="Battleship">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -149,6 +167,12 @@
       <workItem from="1669643029401" duration="536000" />
       <workItem from="1669666553110" duration="2946000" />
       <workItem from="1669717120486" duration="11101000" />
+      <workItem from="1669734854633" duration="3262000" />
+      <workItem from="1669739305221" duration="1571000" />
+      <workItem from="1669741189680" duration="1877000" />
+      <workItem from="1669801873591" duration="218000" />
+      <workItem from="1669810850067" duration="2198000" />
+      <workItem from="1669828022680" duration="3000" />
     </task>
     <task id="LOCAL-00001" summary="Test remplissage struct navires">
       <created>1669511278301</created>

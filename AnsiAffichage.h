@@ -14,6 +14,7 @@
 
 typedef struct game{
     char board[LIGNES][COLONNES];
+    char boardEnemy[LIGNES][COLONNES];
 }t_game;
 /*
 typedef struct Plateau{

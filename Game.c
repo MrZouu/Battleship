@@ -40,7 +40,6 @@ void modVisible(){
     }*/
 
 
-
 /// int tourDeJeu --> ++ quand les 2 joueurs ont joué
 
 // void game()

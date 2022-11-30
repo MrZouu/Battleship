@@ -43,7 +43,7 @@ void init(t_game * b){
             if(j%3==0) {    //Pour trait vertical sur toute la surface
                 b->board[i][j]=TRAIT_VERTICAL;
                 if(i%2==0) {    //Pour croix dans grille
-                    b->board[i][j]=CROIX; //Croix
+                    b->board[i][j]=CROIX;
                 }
             }
             if(j==0 && i%2==0)

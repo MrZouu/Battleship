@@ -12,6 +12,12 @@ int main()
     t_game b;
     init(&b);
     initialisationFlotte(&b);
+    printf("\n\nCreation du jeu en cours...\nLes grilles ont ete generees aleatoirement !\n");
     AnsiAffichage(b);
-    return 0;
+    do{
+        gameMenu(b);
+    }while(1);      //Faire tant que tous les bateaux d'un joueur sont détruits
+
+
+
 }
