@@ -22,7 +22,6 @@
 #define CASEALEATOIRE rand() % (MAX +1 -MIN)+MIN
 
 #define TAILLEBATEAU boat[i].size
-#define TAILLEBATEAUTEST boat[l].size
 
 
 typedef enum typeBat{

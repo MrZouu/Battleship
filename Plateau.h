@@ -16,8 +16,11 @@
 #define NUMEROBATEAU i+48
 
 #define TESTHORIZONTAL Y+(k*3)
+#define TESTVERTICAL X+(k*2)
 #define AFFICHAGEHORIZONTAL Y+(j*3)
+#define AFFICHAGEVERTICAL X+(j*2)
 #define H_CASENUMERO Y+(j*3)+1
+#define V_CASENUMERO Y+1
 
 
 void affecterBateau(t_bateau * boat, t_game *b);

@@ -13,35 +13,47 @@ void placement(t_game b)
 
 void affecterBateau(t_bateau * boat, t_game * b)
 {
-    int X, Y;
-    int TEST;
-    TEST=0;
-    do{
-        for(int i=0;i<10;i++)
+    int X, Y, TEST,i=0;
+    do
+    {
+        TEST=0;
+        boat[i].position.x=CASEALEATOIRE;
+        boat[i].position.y=CASEALEATOIRE;
+        X=((boat[i].position.x)*2)+1; //Calcul pour afficher sur lignes
+        Y=((boat[i].position.y)*3)+1; //Calcul pour afficher sur colonnes
+        if(boat[i].orientation==0)
         {
-            boat[i].position.x=CASEALEATOIRE;
-            boat[i].position.y=CASEALEATOIRE;
+            for(int k=0;k<TAILLEBATEAU;k++) //TESTHORIZONTAL
+                {
+                    (b->board[X][TESTHORIZONTAL]!=0)? TEST=1 : TEST;
+                }
         }
-
-        for(int l=0;l<10;l++)
+        else{
+            for(int k=0;k<TAILLEBATEAU;k++) //TESTVERTICAL
+                {
+                    (b->board[TESTVERTICAL][Y]!=0)? TEST=1 : TEST;
+                }
+        }
+        if(TEST==0)
         {
-            X=((boat[l].position.x)*2)+1; //Calcul pour afficher sur lignes
-            Y=((boat[l].position.y)*3)+1; //Calcul pour afficher sur colonnes
-            for(int k=0;k<TAILLEBATEAUTEST;k++)
+            if(boat[i].orientation==0)
             {
-                (b->board[X][TESTHORIZONTAL]!=0)? TEST=1 : TEST;
+                for(int j=0;j<TAILLEBATEAU;j++)//AFFICHAGE HORIZONTAL
+                {
+                    b->board[X][AFFICHAGEHORIZONTAL]= getSymbolFromBateau(boat[i]);
+                    b->board[X][H_CASENUMERO]=NUMEROBATEAU;
+                }
             }
+            else{
+                for(int j=0;j<TAILLEBATEAU;j++)//AFFICHAGE VERTICAL
+                {
+                    b->board[AFFICHAGEVERTICAL][Y]= getSymbolFromBateau(boat[i]);
+                    b->board[AFFICHAGEVERTICAL][V_CASENUMERO]=NUMEROBATEAU;
+                }
+            }
+            i++;
         }
-    }while(TEST==1);
-
-
-    for(int i=0;i<10;i++){
-        for(int j=0;j<TAILLEBATEAU;j++)
-        {
-            b->board[X][AFFICHAGEHORIZONTAL]= getSymbolFromBateau(boat[i]);
-            b->board[X][H_CASENUMERO]=NUMEROBATEAU;
-        }
-    }
+    }while(i<10);
 }
 
 char getSymbolFromBateau(t_bateau boat){    //Retourne le caractere correspondant au bateau
