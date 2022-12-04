@@ -1,3 +1,0 @@
-C:/Users/lor3n/Documents/GitHub/Battleship/cmake-build-debug/CMakeFiles/Battleship.dir
-C:/Users/lor3n/Documents/GitHub/Battleship/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/lor3n/Documents/GitHub/Battleship/cmake-build-debug/CMakeFiles/rebuild_cache.dir
