@@ -8,8 +8,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include "AnsiAffichage.h"
+#include "Navires.h"
 
 //Nombre de navires
+#define nbPa 1
 #define nbC 2
 #define nbD 3
 #define nbSM 4
@@ -17,41 +19,34 @@
 #define MAX 14  //Position MAX
 #define MIN 0   //Position MIN
 
-typedef struct PorteAvion{  //7 CASES
-    char symbole;
-    int taille;
-    int pos_X; ///Lignes
-    int pos_Y; ///Colonnes
-}t_porteAv;
+#define CASEALEATOIRE rand() % (MAX +1 -MIN)+MIN
 
-typedef struct Croiseur{    //5 CASES
-    char symbole;
-    int taille;
-    int pos_X;
-    int pos_Y;
-}t_croiseur;
+#define TAILLEBATEAU boat[i].size
 
-typedef struct Destroyeur{  //3 CASES
-    char symbole;
-    int taille;
-    int pos_X;
-    int pos_Y;
-}t_destroy;
 
-typedef struct SousMarin{   //1 CASE
-    char symbole;
-    int taille;
-    int pos_X;
-    int pos_Y;
-}t_sousMarin;
+typedef enum typeBat{
+    PORTEAVION = 0,
+    SOUSMARIN,
+    DESTROYEUR,
+    CROISEUR
+}e_type;
 
-void initialisationFlotte(t_game * b);
-void SaisirPa(t_porteAv * pA);
-void SaisirC(t_porteAv * C);
-void SaisirD(t_porteAv * D);
-void SaisirSm(t_porteAv * Sm);
+typedef struct coordonnees{
+    int x;
+    int y;
+}t_coord;
 
-void afficherCroiseur(t_croiseur * qt2);
+typedef struct bateaux{
+    e_type type_bateau;           //Type du bateau
+    t_coord position;             //Coordonnées d'un bateau
+    int size;                     //Taille d'un bateau
+    int orientation;           //0 horizontal 1 vertical
+}t_bateau;
+
+void initialisationFlotte(t_game * ,int *tab);
+void initialisationFlotteIA(t_game * b, t_game * b1);
+void SaisieBateaux(t_bateau * boat);
+void pointDeVie(int *tab);
 
 #endif //BATTLESHIP_NAVIRES_H
 

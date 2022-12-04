@@ -10,5 +10,7 @@ add_executable(Battleship
         Navires.h
         Navires.c
         Plateau.c
-        Plateau.h)
+        Plateau.h
+        Game.c
+        Game.h Actions.c Actions.h)
 
