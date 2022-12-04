@@ -7,14 +7,19 @@
 
 //Définir caractéristiques navire, position aléatoire, initialisation
 //Navires a poser sur lignes impaires et colonnes pas multiples de 3
-void initialisationFlotte(t_game * b)
+void initialisationFlotte(t_game * b,int *tab)
 {
     t_bateau boat[10];
     SaisieBateaux(boat);
-    //AfficherBateaux(boat);
+    pointDeVie(tab);
     affecterBateau(boat,b);
 }
 
+void initialisationFlotteIA(t_game * b, t_game * b1)
+{
+    t_bateau boat[10];
+    affecterBateauIA(b,b1);
+}
 
 void SaisieBateaux(t_bateau * boat)
 {
@@ -49,15 +54,25 @@ void SaisieBateaux(t_bateau * boat)
     }
 }
 
-void AfficherBateaux(t_bateau * boat)
+void pointDeVie(int *tab)
 {
     for(int i=0;i<10;i++)
     {
-        printf("VAL [%d] %d\n", i, boat[i].type_bateau);
-        printf("VAL [%d] %d\n", i, boat[i].orientation);
-        printf("VAL [%d] %d\n", i, boat[i].position.x);
-        printf("VAL [%d] %d\n", i, boat[i].position.y);
+        if(i==0)
+        {
+            tab[i]=7;
+        }
+        if(i>=1&&i<=2)
+        {
+            tab[i]=5;
+        }
+        if(i>=3&&i<=5)
+        {
+            tab[i]=3;
+        }
+        if(i>=6&&i<=9)
+        {
+            tab[i]=1;
+        }
     }
 }
-
-

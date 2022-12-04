@@ -12,5 +12,5 @@ add_executable(Battleship
         Plateau.c
         Plateau.h
         Game.c
-        Game.h)
+        Game.h Actions.c Actions.h)
 

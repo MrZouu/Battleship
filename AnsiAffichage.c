@@ -3,18 +3,6 @@
 //
 #include "AnsiAffichage.h"
 
-#define ANGLE_HAUT_GAUCHE 0xDA
-#define ANGLE_HAUT_DROIT 0xBF
-#define ANGLE_BAS_GAUCHE 0xC0
-#define ANGLE_BAS_DROIT 0xD9
-#define CROIX 0xC5
-#define TRAIT_VERTICAL 0xB3
-#define TRAIT_HORIZONTAL 0xC4
-#define T_PENCHE_DROITE 0xB4
-#define T_INVERSE 0xC1
-#define T_NORMAL 0xC2
-#define T_PENCHE_GAUCHE 0xC3
-
 void init(t_game * b){
     for(int i=0;i<=LIGNES;i++) //Initialisation tableau à 0;
     {
@@ -74,9 +62,7 @@ void init(t_game * b){
     b->board[30][45]=ANGLE_BAS_DROIT; //angle bas DROIT
 }
 
-
-
-void AnsiAffichage(t_game b){
+void AnsiAffichage(t_game *b){
     int num=0;  //Numéros sur ligne
     char lettre = 'A'; //Lettres sur colonne
     printf("    ");
@@ -91,8 +77,15 @@ void AnsiAffichage(t_game b){
         (i%2!=0) ? printf(" %c ",lettre), lettre++:printf("   "); //Operateur ternaire affichage lettres
         for(int j=0;j<COLONNES;j++)
         {
-            printf("%c",b.board[i][j]);
+            printf("%c",b->board[i][j]);
         }
         printf("\n");
     }
+}
+
+
+void Color(int couleurDuTexte,int couleurDeFond) // fonction d'affichage de couleurs
+{
+    HANDLE H=GetStdHandle(STD_OUTPUT_HANDLE);
+    SetConsoleTextAttribute(H,couleurDeFond*16+couleurDuTexte);
 }

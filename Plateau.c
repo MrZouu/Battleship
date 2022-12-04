@@ -6,21 +6,14 @@
 #include "AnsiAffichage.h"
 #include "Game.h"
 
-void placement(t_game b)
-{
-
-}
-
-void affecterBateau(t_bateau * boat, t_game * b)
+void affecterBateau(t_bateau *boat, t_game * b)
 {
     int X, Y, TEST,i=0;
     do
     {
         TEST=0;
-        boat[i].position.x=CASEALEATOIRE;
-        boat[i].position.y=CASEALEATOIRE;
-        X=((boat[i].position.x)*2)+1; //Calcul pour afficher sur lignes
-        Y=((boat[i].position.y)*3)+1; //Calcul pour afficher sur colonnes
+        X=((CASEALEATOIRE)*2)+1; //Calcul pour afficher sur lignes
+        Y=((CASEALEATOIRE)*3)+1; //Calcul pour afficher sur colonnes
         if(boat[i].orientation==0)
         {
             for(int k=0;k<TAILLEBATEAU;k++) //TESTHORIZONTAL
@@ -63,8 +56,35 @@ char getSymbolFromBateau(t_bateau boat){    //Retourne le caractere correspondan
         case 2:
             return SYMBOLE_CROISEUR;
         case 3:
-            return SYMBOLE_DESTROYEUR;
+            return SYMBOLE_DESTROYER;
         case 4:
             return SYMBOLE_SOUSMARIN;
     }
+}
+
+void affecterBateauIA(t_game * b, t_game * b1)
+{
+    int X, Y;
+    for(int i = 0; i<14; i++){
+        X = ((i) * 2) + 1;
+        for(int j = 0; j<14; j++) {
+            Y = ((j) * 3) + 1;
+            if (b->board[X][Y] == 0) {
+                b1->board[X][Y] = 0;
+            }
+            if ((b->board[X][Y]) == SYMBOLE_PORTEAVION){
+                (b1->board[X][Y]) = SYMBOLE_INVISIBLE;
+            }
+            if((b->board[X][Y]) == SYMBOLE_SOUSMARIN){
+                b1->board[X][Y] = SYMBOLE_INVISIBLE;
+            }
+            if((b->board[X][Y]) == SYMBOLE_CROISEUR){
+                b1->board[X][Y] = SYMBOLE_INVISIBLE;
+            }
+            if((b->board[X][Y]) == SYMBOLE_DESTROYER){
+                b1->board[X][Y] = SYMBOLE_INVISIBLE;
+            }
+        }
+    }
+
 }

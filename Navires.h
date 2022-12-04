@@ -38,25 +38,15 @@ typedef struct coordonnees{
 
 typedef struct bateaux{
     e_type type_bateau;           //Type du bateau
-/// e_allignement allignement;     //Allignement du bateau sur la grille
     t_coord position;             //Coordonnées d'un bateau
     int size;                     //Taille d'un bateau
     int orientation;           //0 horizontal 1 vertical
 }t_bateau;
 
-
-
-void initialisationFlotte(t_game * b);
+void initialisationFlotte(t_game * ,int *tab);
+void initialisationFlotteIA(t_game * b, t_game * b1);
 void SaisieBateaux(t_bateau * boat);
-void AfficherBateaux(t_bateau * boat);
-void correction(t_bateau * boat);
-
-
-/*typedef struct celluleTab{
-    t_coord pos;        //Positon d'une cellule dans un bateau
-    t_bateau * bat;     //Quel bateau est à cet emplacement ?
-    bool visible;       //Est ce que la cellule/case est visible ?
-}t_cellule;*/
+void pointDeVie(int *tab);
 
 #endif //BATTLESHIP_NAVIRES_H
 

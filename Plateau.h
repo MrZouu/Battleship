@@ -10,10 +10,11 @@
 
 #define SYMBOLE_PORTEAVION 'P'
 #define SYMBOLE_SOUSMARIN 'S'
-#define SYMBOLE_DESTROYEUR 'D'
+#define SYMBOLE_DESTROYER 'D'
 #define SYMBOLE_CROISEUR 'C'
+#define SYMBOLE_INVISIBLE '  '
 
-#define NUMEROBATEAU i+48
+#define NUMEROBATEAU i+48 //valeur ascii pour numero
 
 #define TESTHORIZONTAL Y+(k*3)
 #define TESTVERTICAL X+(k*2)
@@ -23,8 +24,12 @@
 #define V_CASENUMERO Y+1
 
 
-void affecterBateau(t_bateau * boat, t_game *b);
+void affecterBateau(t_bateau *boat, t_game *b);
 
 char getSymbolFromBateau(t_bateau boat);
+
+void affecterBateauIA(t_game *b, t_game * b1);
+
+char getSymbolFromBateauIA(t_bateau boat);
 
 #endif //BATTLESHIP_PLATEAU_H
