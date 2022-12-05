@@ -7,9 +7,11 @@
 
 int main()
 {
+    srand(time(NULL));
     t_game b;
     init(&b);
     AnsiAffichage(b);
-    initialisationFlotte();
+    printf("uygugouyfyitf");
+//    printf(0x22)
     return 0;
 }

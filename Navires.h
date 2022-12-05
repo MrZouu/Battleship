@@ -6,6 +6,11 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdbool.h>
+
+#include "AnsiAffichage.h"
+
 //Nombre de navires
 #define nbC 2
 #define nbD 3
@@ -14,43 +19,38 @@
 #define MAX 14  //Position MAX
 #define MIN 0   //Position MIN
 
-typedef struct PorteAvion{  //7 CASES
-    char symbole;
-    int taille;
-    int pos_X;
-    int pos_Y;
-}t_porteAv;
 
-typedef struct Croiseur{    //5 CASES
-    char symbole;
-    int taille;
-    int pos_X;
-    int pos_Y;
-}t_croiseur;
+void initialisationFlotte(t_game * b);
+void saisieBateaux(t_bateau * boat);
 
-typedef struct Destroyeur{  //3 CASES
-    char symbole;
-    int taille;
-    int pos_X;
-    int pos_Y;
-}t_destroy;
 
-typedef struct SousMarin{   //1 CASE
-    char symbole;
-    int taille;
-    int pos_X;
-    int pos_Y;
-}t_sousMarin;
 
-void initialisationFlotte();
-t_porteAv SaisirPa(t_porteAv * pA);
-t_croiseur SaisirC(t_porteAv * C);
-t_destroy SaisirD(t_porteAv * D);
-t_sousMarin SaisirSm(t_porteAv * Sm);
+typedef enum typeBat{
+    PORTEAVION = 0,
+    SOUSMARIN,
+    DESTROYEUR,
+    CROISEUR
+}e_type;
 
-void SaisirFlotteC(t_croiseur * qt2);
-void SaisirFlotteD(t_destroy * qt3);
-void SaisirFlotteSm(t_sousMarin * qt4);
+typedef struct coordonnees{
+    int x;
+    int y;
+}t_coord;
+
+typedef struct bateaux{
+    e_type type_bateau;           //Type du bateau
+//  e_allignement allgnement;     //Allignement du bateau sur la grille
+    t_coord position;             //Coordonnées d'un bateau
+    int size;                     //Taille d'un bateau
+}t_bateau;
+
+/*typedef struct celluleTab{
+    t_coord pos;        //Positon d'une cellule dans un bateau
+    t_bateau * bat;     //Quel bateau est à cet emplacement ?
+    bool visible;       //Est ce que la cellule/case est visible ?
+};*/
+
+
 
 
 

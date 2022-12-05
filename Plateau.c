@@ -3,36 +3,63 @@
 //
 
 #include "Plateau.h"
-
+#include "AnsiAffichage.h"
 
 void placement(t_game b)
 {
 
 }
 
-void affecterC(t_croiseur C)
+void affecterPorteAv(t_porteAv * qt1, t_game * b)
 {
-    //Affichage Caracteristiques meuble
-    printf("Symbole: %c\n",C.symbole);
-    printf("Taille: %d\n",C.taille);
-    printf("posX: %d\n",C.pos_X);
-    printf("posY: %d\n",C.pos_Y);
+    int X, Y;
+        X=((qt1->pos_X)*2)+1; //Calcul pour afficher sur lignes
+        Y=((qt1->pos_Y)*3)+1; //Calcul pour afficher sur colonnes
+        b->board[X][Y]='P';
+        for(int i=0;i<(qt1->taille);i+=2) //Affichage sur plusieures cases ( ici 7 ) vertical
+        {
+            b->board[X+i][Y]='P';
+        }
 }
 
-void FlotteC(t_croiseur * qt2)
+void affecterCroiseur(t_croiseur * qt2, t_game * b)
 {
-    for(int i=0;i<nbC;i++)
+    int X, Y;
+    for(int i=0;i<nbC;i++)  //Saisie du tableau de structure
     {
-        printf("Croiseur [%d]:\n",i); //numéro meuble
-        affecterC(qt2[i]);   //Appel afficher M en boucle
+        X=((qt2[i].pos_X)*2)+1; //Calcul pour afficher sur lignes
+        Y=((qt2[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes
+        b->board[X][Y]='C';
+        for(int j=0;j<(qt2[i].taille);j+=2) //Affichage sur plusieures cases ( ici 5 ) vertical
+        {
+            b->board[X+j][Y]='C';
+        }
     }
 }
 
-void affecterPa(t_porteAv pA)
+void affecterDestroyer(t_destroy * qt3, t_game * b)
 {
-    //Affichage Caracteristiques meuble
-    printf("Symbole: %c\n",pA.symbole);
-    printf("Taille: %d\n",pA.taille);
-    printf("posX: %d\n",pA.pos_X);
-    printf("posY: %d\n",pA.pos_Y);
+    int X, Y;
+    for(int i=0;i<nbD;i++)  //Saisie du tableau de structure
+    {
+        X=((qt3[i].pos_X)*2)+1; //Calcul pour afficher sur lignes
+        Y=((qt3[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes
+        b->board[X][Y]='D';
+        for(int j=0;j<(qt3[i].taille);j+=2) //Affichage sur plusieures cases ( ici 3 ) vertical
+        {
+            b->board[X+j][Y]='D';
+        }
+    }
 }
+
+void affecterSousMarin(t_sousMarin * qt4, t_game * b)
+{
+    int X, Y;
+    for(int i=0;i<nbSM;i++)  //Saisie du tableau de structure
+    {
+        X=((qt4[i].pos_X)*2)+1; //Calcul pour afficher sur lignes
+        Y=((qt4[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes
+        b->board[X][Y]='S';
+    }
+}
+*/

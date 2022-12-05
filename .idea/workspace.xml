@@ -29,8 +29,40 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/matheo-dev" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/Plateau.c">
+      <ranges>
+        <range start1="12" end1="12" start2="12" end2="21" changelist="412713ec-b430-4780-93ee-0ecd1e6ba3b6" />
+        <range start1="64" end1="67" start2="73" end2="74" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/AnsiAffichage.c">
+      <ranges>
+        <range start1="81" end1="82" start2="81" end2="81" changelist="412713ec-b430-4780-93ee-0ecd1e6ba3b6" />
+        <range start1="87" end1="88" start2="86" end2="87" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="102" end1="102" start2="101" end2="116" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+      </ranges>
+    </file>
+    <file path="$PROJECT_DIR$/AnsiAffichage.h">
+      <ranges>
+        <range start1="10" end1="10" start2="10" end2="11" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="13" end1="13" start2="14" end2="19" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="17" end1="19" start2="23" end2="25" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+        <range start1="21" end1="22" start2="27" end2="28" changelist="412713ec-b430-4780-93ee-0ecd1e6ba3b6" />
+        <range start1="25" end1="25" start2="31" end2="34" changelist="13ee9d51-39af-4389-9dff-47cd159297be" />
+      </ranges>
+    </file>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,9 +118,11 @@
       <workItem from="1669551696286" duration="73000" />
       <workItem from="1669551781050" duration="367000" />
       <workItem from="1669552161216" duration="6005000" />
+
       <workItem from="1669713837317" duration="19000" />
       <workItem from="1669714050426" duration="45000" />
       <workItem from="1670176885198" duration="1000" />
+
     </task>
     <task id="LOCAL-00001" summary="Test remplissage struct navires">
       <created>1669511278301</created>
@@ -118,7 +152,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669557835162</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Test Plateau.c">
+      <created>1669709489900</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1669709489900</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Test Plateau.c">
+      <created>1669709566604</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669709566604</updated>
+    </task>
+    <task id="LOCAL-00007" summary="modif test">
+      <created>1669709810727</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669709810727</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,7 +184,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="matheo-dev" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -139,6 +206,8 @@
     <MESSAGE value="Test remplissage struct navires" />
     <MESSAGE value="test" />
     <MESSAGE value="Saisie complète flotte" />
-    <option name="LAST_COMMIT_MESSAGE" value="Saisie complète flotte" />
+    <MESSAGE value="Test Plateau.c" />
+    <MESSAGE value="modif test" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif test" />
   </component>
 </project>
