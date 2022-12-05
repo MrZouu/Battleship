@@ -17,24 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="modif test">
+    <list default="true" id="13ee9d51-39af-4389-9dff-47cd159297be" name="Changes" comment="Affectation flotte test">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnsiAffichage.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnsiAffichage.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Navires.h" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plateau.c" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plateau.h" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Battleship" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Battleship" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-    </list>
-    <list id="412713ec-b430-4780-93ee-0ecd1e6ba3b6" name="Changes by Lorenzo" comment="">
-      <change beforePath="$PROJECT_DIR$/AnsiAffichage.c" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AnsiAffichage.h" beforeDir="false" afterPath="$PROJECT_DIR$/AnsiAffichage.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Navires.c" beforeDir="false" afterPath="$PROJECT_DIR$/Navires.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Plateau.c" beforeDir="false" afterPath="$PROJECT_DIR$/Plateau.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,7 +86,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lor3n/Documents/GitHub/Cledeo&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lor3n/Documents/GitHub/Battleship/CMakeLists.txt&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
     &quot;structure.view.defaults.are.configured&quot;: &quot;true&quot;
@@ -134,9 +118,11 @@
       <workItem from="1669551696286" duration="73000" />
       <workItem from="1669551781050" duration="367000" />
       <workItem from="1669552161216" duration="6005000" />
-      <workItem from="1669643029401" duration="536000" />
-      <workItem from="1669666553110" duration="2946000" />
-      <workItem from="1669710244310" duration="4384000" />
+
+      <workItem from="1669713837317" duration="19000" />
+      <workItem from="1669714050426" duration="45000" />
+      <workItem from="1670176885198" duration="1000" />
+
     </task>
     <task id="LOCAL-00001" summary="Test remplissage struct navires">
       <created>1669511278301</created>
