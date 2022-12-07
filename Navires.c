@@ -5,77 +5,74 @@
 #include "Plateau.h"
 #include "AnsiAffichage.h"
 
-//Définir caractéristiques navire, position aléatoire, initialisation
-//Navires a poser sur lignes impaires et colonnes pas multiples de 3
-void initialisationFlotte(t_game * b)
+//Initialiser les caracteristiques des bateaux
+
+void initialisationFlotte(t_game * b,int *tab)
 {
-    t_porteAv qt1;
-    t_croiseur qt2[nbC];
-    t_destroy qt3[nbD];
-    t_sousMarin qt4[nbSM];
-    //Initialiser jeu
-    SaisiePa(&qt1);
-    SaisieC(&qt2);
-    SaisieD(&qt3);
-    SaisieSm(&qt4);
-    //afficherCroiseur(qt2);
-    affecterPorteAv(&qt1,b);
-    affecterCroiseur(qt2,b);
-    affecterDestroyer(qt3,b);
-    affecterSousMarin(qt4,b);
+    t_bateau boat[10];
+    SaisieBateaux(boat);
+    pointDeVie(tab);
+    affecterBateau(boat,b);
 }
 
-void SaisiePa(t_porteAv * pA)
+void initialisationFlotteIA(t_game * b, t_game * b1)
 {
-    pA->symbole='P';
-    pA->taille=7;
-    pA->pos_X=rand() % (MAX +1 -MIN)+MIN; ;
-    pA->pos_Y=rand() % (MAX +1 -MIN)+MIN; ;
+    t_bateau boat[10];
+    affecterBateauIA(b,b1);
 }
 
-void SaisieC(t_croiseur * C)
+void SaisieBateaux(t_bateau * boat)
 {
-    for(int i=0;i<nbC;i++)  //Saisie du tableau de structure
+    for(int i=0;i<10;i++)
     {
-        C[i].symbole='C';
-        C[i].taille=5;
-        C[i].pos_X=rand() % (MAX +1 -MIN)+MIN; //max +1 - min;
-        C[i].pos_Y=rand() % (MAX +1 -MIN)+MIN; //max +1 - min;
+        if(i==0)
+        {
+            boat[i].type_bateau=nbPa;
+            boat[i].orientation=rand()&1;
+            TAILLEBATEAU=7;
+        }
+        if(i>=1&&i<=2)
+        {
+            boat[i].type_bateau=nbC;
+            boat[i].orientation=rand()&1;
+            TAILLEBATEAU=5;
+
+        }
+        if(i>=3&&i<=5)
+        {
+            boat[i].type_bateau=nbD;
+            boat[i].orientation=rand()&1;
+            TAILLEBATEAU=3;
+
+        }
+        if(i>=6&&i<=9)
+        {
+            boat[i].type_bateau=nbSM;
+            boat[i].orientation=rand()&1;
+            TAILLEBATEAU=1;
+        }
     }
 }
 
-void SaisieD(t_destroy * D)
+void pointDeVie(int *tab)
 {
-    for(int i=0;i<nbD;i++)  //Saisie du tableau de structure
+    for(int i=0;i<10;i++)
     {
-        D[i].symbole='D';
-        D[i].taille=3;
-        D[i].pos_X=rand() % (MAX +1 -MIN)+MIN;
-        D[i].pos_Y=rand() % (MAX +1 -MIN)+MIN;
-    }
-
-}
-
-void SaisieSm(t_sousMarin * Sm)
-{
-    for(int i=0;i<nbSM;i++)  //Saisie du tableau de structure
-    {
-        Sm[i].symbole='S';
-        Sm[i].taille=1;
-        Sm[i].pos_X=rand() % (MAX +1 -MIN)+MIN;
-        Sm[i].pos_Y=rand() % (MAX +1 -MIN)+MIN;
-    }
-}
-///------------------------AFFICHAGE TEST---------------------------///
-
-
-void afficherCroiseur(t_croiseur * qt2)
-{
-    for(int i=0;i<nbC;i++)  //Saisie du tableau de structure
-    {
-        printf("Symbole: %c\n",qt2[i].symbole);
-        printf("Taille: %d\n",qt2[i].taille);
-        printf("posX: %d\n",qt2[i].pos_X);
-        printf("posY: %d\n",qt2[i].pos_Y);
+        if(i==0)
+        {
+            tab[i]=7;
+        }
+        if(i>=1&&i<=2)
+        {
+            tab[i]=5;
+        }
+        if(i>=3&&i<=5)
+        {
+            tab[i]=3;
+        }
+        if(i>=6&&i<=9)
+        {
+            tab[i]=1;
+        }
     }
 }

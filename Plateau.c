@@ -4,62 +4,94 @@
 
 #include "Plateau.h"
 #include "AnsiAffichage.h"
+#include "Game.h"
 
-void placement(t_game b)
+//Affectation des elements du tableau
+
+void affecterBateau(t_bateau *boat, t_game * b)
 {
-
-}
-
-void affecterPorteAv(t_porteAv * qt1, t_game * b)
-{
-    int X, Y;
-        X=((qt1->pos_X)*2)+1; //Calcul pour afficher sur lignes
-        Y=((qt1->pos_Y)*3)+1; //Calcul pour afficher sur colonnes
-        b->board[X][Y]='P';
-        for(int i=0;i<(qt1->taille);i+=2) //Affichage sur plusieures cases ( ici 7 ) vertical
-        {
-            b->board[X+i][Y]='P';
-        }
-}
-
-void affecterCroiseur(t_croiseur * qt2, t_game * b)
-{
-    int X, Y;
-    for(int i=0;i<nbC;i++)  //Saisie du tableau de structure
+    int X, Y, TEST,i=0;
+    do
     {
-        X=((qt2[i].pos_X)*2)+1; //Calcul pour afficher sur lignes
-        Y=((qt2[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes
-        b->board[X][Y]='C';
-        for(int j=0;j<(qt2[i].taille);j+=2) //Affichage sur plusieures cases ( ici 5 ) vertical
+        TEST=0;
+        do {
+            X = ((CASEALEATOIRE)*2)+1; //Calcul pour afficher sur lignes
+        }while(((X-1)/2)>=14-TAILLEBATEAU);
+        do{
+            Y=((CASEALEATOIRE)*3)+1; //Calcul pour afficher sur colonnes
+        }while(((Y-1)/3)>=14-TAILLEBATEAU);
+
+        if(boat[i].orientation==0)
         {
-            b->board[X+j][Y]='C';
+            for(int k=0;k<TAILLEBATEAU;k++) //TESTHORIZONTAL
+            {
+                (b->board[X][TESTHORIZONTAL]!=0)? TEST=1 : TEST;
+            }
         }
+        else{
+            for(int k=0;k<TAILLEBATEAU;k++) //TESTVERTICAL
+            {
+                (b->board[TESTVERTICAL][Y]!=0)? TEST=1 : TEST;
+            }
+        }
+        if(TEST==0)
+        {
+            if(boat[i].orientation==0)
+            {
+                for(int j=0;j<TAILLEBATEAU;j++)//AFFICHAGE HORIZONTAL
+                {
+                    b->board[X][AFFICHAGEHORIZONTAL]= getSymbolFromBateau(boat[i]);
+                    b->board[X][H_CASENUMERO]=NUMEROBATEAU;
+                }
+            }
+            else{
+                for(int j=0;j<TAILLEBATEAU;j++)//AFFICHAGE VERTICAL
+                {
+                    b->board[AFFICHAGEVERTICAL][Y]= getSymbolFromBateau(boat[i]);
+                    b->board[AFFICHAGEVERTICAL][V_CASENUMERO]=NUMEROBATEAU;
+                }
+            }
+            i++;
+        }
+    }while(i<10);
+}
+
+char getSymbolFromBateau(t_bateau boat){    //Retourne le caractere correspondant au bateau
+    switch(boat.type_bateau){
+        case 1:
+            return SYMBOLE_PORTEAVION;
+        case 2:
+            return SYMBOLE_CROISEUR;
+        case 3:
+            return SYMBOLE_DESTROYER;
+        case 4:
+            return SYMBOLE_SOUSMARIN;
     }
 }
 
-void affecterDestroyer(t_destroy * qt3, t_game * b)
+void affecterBateauIA(t_game * b, t_game * b1)
 {
     int X, Y;
-    for(int i=0;i<nbD;i++)  //Saisie du tableau de structure
-    {
-        X=((qt3[i].pos_X)*2)+1; //Calcul pour afficher sur lignes
-        Y=((qt3[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes
-        b->board[X][Y]='D';
-        for(int j=0;j<(qt3[i].taille);j+=2) //Affichage sur plusieures cases ( ici 3 ) vertical
-        {
-            b->board[X+j][Y]='D';
+    for(int i = 0; i<14; i++){
+        X = ((i) * 2) + 1;
+        for(int j = 0; j<14; j++) {
+            Y = ((j) * 3) + 1;
+            if (b->board[X][Y] == 0) {
+                b1->board[X][Y] = 0;
+            }
+            if ((b->board[X][Y]) == SYMBOLE_PORTEAVION){
+                (b1->board[X][Y]) = SYMBOLE_INVISIBLE;
+            }
+            if((b->board[X][Y]) == SYMBOLE_SOUSMARIN){
+                b1->board[X][Y] = SYMBOLE_INVISIBLE;
+            }
+            if((b->board[X][Y]) == SYMBOLE_CROISEUR){
+                b1->board[X][Y] = SYMBOLE_INVISIBLE;
+            }
+            if((b->board[X][Y]) == SYMBOLE_DESTROYER){
+                b1->board[X][Y] = SYMBOLE_INVISIBLE;
+            }
         }
     }
-}
 
-void affecterSousMarin(t_sousMarin * qt4, t_game * b)
-{
-    int X, Y;
-    for(int i=0;i<nbSM;i++)  //Saisie du tableau de structure
-    {
-        X=((qt4[i].pos_X)*2)+1; //Calcul pour afficher sur lignes
-        Y=((qt4[i].pos_Y)*3)+1; //Calcul pour afficher sur colonnes
-        b->board[X][Y]='S';
-    }
 }
-*/

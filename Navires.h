@@ -7,11 +7,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdbool.h>
-
 #include "AnsiAffichage.h"
+#include "Navires.h"
 
 //Nombre de navires
+#define nbPa 1
 #define nbC 2
 #define nbD 3
 #define nbSM 4
@@ -19,10 +19,9 @@
 #define MAX 14  //Position MAX
 #define MIN 0   //Position MIN
 
+#define CASEALEATOIRE rand() % (MAX +1 -MIN)+MIN
 
-void initialisationFlotte(t_game * b);
-void saisieBateaux(t_bateau * boat);
-
+#define TAILLEBATEAU boat[i].size
 
 
 typedef enum typeBat{
@@ -39,20 +38,15 @@ typedef struct coordonnees{
 
 typedef struct bateaux{
     e_type type_bateau;           //Type du bateau
-//  e_allignement allgnement;     //Allignement du bateau sur la grille
     t_coord position;             //Coordonnées d'un bateau
     int size;                     //Taille d'un bateau
+    int orientation;           //0 horizontal 1 vertical
 }t_bateau;
 
-/*typedef struct celluleTab{
-    t_coord pos;        //Positon d'une cellule dans un bateau
-    t_bateau * bat;     //Quel bateau est à cet emplacement ?
-    bool visible;       //Est ce que la cellule/case est visible ?
-};*/
-
-
-
-
+void initialisationFlotte(t_game * ,int *tab);
+void initialisationFlotteIA(t_game * b, t_game * b1);
+void SaisieBateaux(t_bateau * boat);
+void pointDeVie(int *tab);
 
 #endif //BATTLESHIP_NAVIRES_H
 
