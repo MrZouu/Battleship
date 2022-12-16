@@ -10,3 +10,8 @@ Battleship (also known as Battleships or Sea Battle) is a strategy type guessing
 
 ⚠️This project is the result of a common work, made for school with a deadline and we chose to leave it as it was at the time of submission
 
+#  Credits
+* [**MrZouu**](https://github.com/MrZouu) : Co-creator of the project.
+* [**Sc0pziion**](https://github.com/sc0pziion) : Co-creator of the project.
+* **Clement Auray** : Co-creator of the project.
+* **Rémi Gaude** : Co-creator of the project.
